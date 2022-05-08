@@ -4,7 +4,7 @@ FFMPEG_VERSION=5.0
 FFMPEG_SOURCE_DIR=FFmpeg-n$FFMPEG_VERSION
 FFMPEG_LIBS="libavcodec libavdevice libavfilter libavformat libavutil libswresample libswscale"
 PREFIX=`pwd`/output
-ARCH="x86_64"
+ARCH="arm64"
 
 if [ ! -d $FFMPEG_SOURCE_DIR ]; then
   echo "Start downloading FFmpeg..."
@@ -20,8 +20,13 @@ cd $FFMPEG_SOURCE_DIR
 
 ./configure \
   --prefix=$PREFIX \
+  --cc="xcrun -sdk iphoneos clang" \
+  --enable-cross-compile \
   --enable-version3 \
   --disable-programs \
+  --disable-audiotoolbox \
+  --disable-sdl2 \
+  --disable-xlib \
   --disable-doc \
   --arch=$ARCH \
   --extra-cflags="-fno-stack-check" \

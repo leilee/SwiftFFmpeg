@@ -36,51 +36,46 @@ let package = Package(
         .linkedFramework("Security"),
         .linkedFramework("CoreMedia"),
         .linkedFramework("CoreVideo"),
+        .linkedFramework("AVFoundation"),
         .linkedFramework("AudioToolbox"),
         .linkedFramework("VideoToolbox"),
-        .linkedFramework("OpenGL"),
         .linkedFramework("CoreImage"),
-        .linkedFramework("AppKit"),
       ]
     ),
     .binaryTarget(
       name: "libavcodec",
-      url: "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libavcodec.zip?raw=true",
-      checksum: "97f406b33946c1ab941af7dd02991e5cc3703779bb018de8ff265eb7a6d236fa"
+      url: "https://github.com/leilee/SwiftFFmpeg/blob/master/xcframework/libavcodec.zip?raw=true",
+      checksum: "45998c679716e23c110315d462d7aa26f466965f119be3b3f5eb6e1d0b7e641c"
     ),
     .binaryTarget(
       name: "libavdevice",
-      url:
-        "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libavdevice.zip?raw=true",
-      checksum: "87738dff91380bd23de288e8702f0aa5511d80895c0974daba13dc117bdd599c"
+      url: "https://github.com/leilee/SwiftFFmpeg/blob/master/xcframework/libavdevice.zip?raw=true",
+      checksum: "8abebcd3981ad70f38ed6547d613725bc0e7ba28a0f6dde2f795b6f59ffe59ba"
     ),
     .binaryTarget(
       name: "libavfilter",
-      url:
-        "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libavfilter.zip?raw=true",
-      checksum: "cb9b72b3cd923c9b065041cf6a87e164264f16eb282ea338b15bdae6dd5a3d15"
+      url: "https://github.com/leilee/SwiftFFmpeg/blob/master/xcframework/libavfilter.zip?raw=true",
+      checksum: "7b48b127af8bb14e944d00f26933212b6fb5794fc2aa4ad4f717a1cb78acd40e"
     ),
     .binaryTarget(
       name: "libavformat",
-      url:
-        "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libavformat.zip?raw=true",
-      checksum: "9def922d249207ed7be7aebdab7bbd2ff3bc41187dcb0bd77c8e216630407e00"
+      url: "https://github.com/leilee/SwiftFFmpeg/blob/master/xcframework/libavformat.zip?raw=true",
+      checksum: "241f020b25d7cca57be1bd8bbd0ed11af9b0d44133059fb931b634f10eb267ed"
     ),
     .binaryTarget(
       name: "libavutil",
-      url: "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libavutil.zip?raw=true",
-      checksum: "3ca05b51466e4fec332b5c1c607b228a67f4eb7a89e09944d19550474214f4e2"
+      url: "https://github.com/leilee/SwiftFFmpeg/blob/master/xcframework/libavutil.zip?raw=true",
+      checksum: "f37690cf3f30b01646572e4cc9c8266469ac0beea6b6e03000fee3f1f7daa69d"
     ),
     .binaryTarget(
       name: "libswresample",
-      url:
-        "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libswresample.zip?raw=true",
-      checksum: "76aa9805c67a040a729eee4599162a982f4bbd2609e7c92b7a3c589159259a7a"
+      url: "https://github.com/leilee/SwiftFFmpeg/blob/master/xcframework/libswresample.zip?raw=true",
+      checksum: "6a2cdec80d9de57fbcaf62f88bd89f75f2c964cdae6629c9311dd750c3763f39"
     ),
     .binaryTarget(
       name: "libswscale",
-      url: "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libswscale.zip?raw=true",
-      checksum: "b5e47c27f44c6818cc11a41fe43535e7bdb25d171a0b5c4984b52b303c7e53b1"
+      url: "https://github.com/leilee/SwiftFFmpeg/blob/master/xcframework/libswscale.zip?raw=true",
+      checksum: "67d73cefd13337c84bab00e8a87d05ad5609a2edb9e437cce58261d49452a14e"
     ),
     .target(
       name: "SwiftFFmpegExamples",
